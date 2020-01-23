@@ -18,7 +18,7 @@
                 
                 @yield('content')
             </section>
-            @include('inc.create-button')
+            
         </div>
         
     </div>

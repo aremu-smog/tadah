@@ -16,7 +16,12 @@
                                 <h3>{{$task->name}}</h3>
                                 <span class="due">{{$task->due}}</span>
                             </div>
-                            <div class="col-3"><span class="status status-progress">{{$task->status}}</span></div>
+                        <div class="col-3"><span class="status 
+                            @if($task->status == 'Pending'){{ 'status-pending'}}
+                            @elseif($task->status == 'In Progress'){{ 'status-progress'}}
+                            @elseif($task->status == 'Completed'){{ 'status-completed'}}
+                            @endif
+                            ">{{$task->status}}</span></div>
                         </div>
                     </div>
                 </a>
@@ -24,6 +29,7 @@
         @endforeach
         
     @endif
+    @include('inc.create-button')
     
    
 @endsection
