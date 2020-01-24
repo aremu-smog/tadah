@@ -36,17 +36,17 @@ body{
     font-size: 1.9em;
 }
 .create-task{
-    position: absolute;
+    position: fixed;
     background: $blue;
-    right: 50px;
-    bottom: 50px;
+    right: 20px;
+    bottom: 20px;
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px $grey;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     cursor: pointer;
     img{
         width: 25px;
