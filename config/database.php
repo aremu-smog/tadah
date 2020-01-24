@@ -3,12 +3,12 @@
 
 use Illuminate\Support\Str;
 
-$url = parse_url("mysql://b0cba290dab494:a5cc83f9@us-cdbr-iron-east-05.cleardb.net/heroku_ba8b880ea5e28aa?reconnect=true");
+$url = "mysql://b0cba290dab494:a5cc83f9@us-cdbr-iron-east-05.cleardb.net/heroku_ba8b880ea5e28aa?reconnect=true";
 
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
+$host = "us-cdbr-iron-east-05.cleardb.net/";
+$username = "b0cba290dab494";
+$password = "a5cc83f";
+$db = "heroku_ba8b880ea5e28aa";
 
 return [
 
