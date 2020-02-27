@@ -5,7 +5,7 @@ use Illuminate\Support\Str;
 
 $url = "mysql://b0cba290dab494:a5cc83f9@us-cdbr-iron-east-05.cleardb.net/heroku_ba8b880ea5e28aa?reconnect=true";
 
-$host = "us-cdbr-iron-east-05.cleardb.net/";
+$host = "us-cdbr-iron-east-05.cleardb.net";
 $username = "b0cba290dab494";
 $password = "a5cc83f";
 $db = "heroku_ba8b880ea5e28aa";
