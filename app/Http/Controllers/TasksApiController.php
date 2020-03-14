@@ -108,7 +108,7 @@ class TasksApiController extends Controller
 
         $task->delete();
 
-        $response = array('response'=>'Item deleted','success'=>true);
+        $response = array('response'=>$task->name.' deleted','success'=>true);
         return $response;
     }
 }
